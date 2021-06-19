@@ -1,0 +1,45 @@
+:root {
+    --primary:#94a079;
+    --secondary:#caac85;
+    --accent:#b46422;
+    --dark:#242722;
+    --light:#8f817b;
+}
+
+body {
+    background-color:var(--primary);
+    padding: 5%;
+    color: var(--accent);
+}
+
+body, * {
+    border-radius: 10px;
+}
+
+div {
+    background-color:var(--secondary);
+    max-width: 95%;
+    margin: auto;
+    text-align: center;
+}
+
+p {
+    display: inline;
+}
+
+nav {
+    background-color: var(--secondary);
+    width:fit-content;
+    margin: auto;
+    margin-bottom: 1%;
+}
+
+nav, a {
+    color:var(--accent);
+    text-align: center;
+    padding: 5px;
+}
+
+button {
+    background-color: dimgray;
+}
