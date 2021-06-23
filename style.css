@@ -1,15 +1,18 @@
+/*Main colors and initial setup*/
 :root {
-    --primary:#94a079;
-    --secondary:#caac85;
+    --primary:#8f8d75;
+    --secondary:#718073;
     --accent:#b46422;
-    --dark:#242722;
+    --dark:#292823;
     --light:#8f817b;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3vw;
 }
 
 body {
     background-color:var(--primary);
     padding: 5%;
-    color: var(--accent);
+    color: var(--dark);
 }
 
 body, * {
@@ -20,13 +23,24 @@ div {
     background-color:var(--secondary);
     max-width: 95%;
     margin: auto;
-    text-align: center;
+}
+
+img {
+    border-radius: 5px;
+    float: left;
+    margin: 1em;
 }
 
 p {
     display: inline;
+    color: var(--dark);
 }
 
+header {
+    font-size: 3em;
+}
+
+/*Nav bar and links*/
 nav {
     background-color: var(--secondary);
     width:fit-content;
@@ -35,11 +49,25 @@ nav {
 }
 
 nav, a {
-    color:var(--accent);
+    color:var(--dark);
     text-align: center;
     padding: 5px;
 }
 
 button {
     background-color: dimgray;
+}
+
+/*class specific*/
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+#mouseFly {
+    position: absolute;
+    margin: -25px;
 }
