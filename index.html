@@ -14,16 +14,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-    <nav>
-      <a href="About Me">About Me</a>
-      <a href="Resume">Resume</a>
-      <a href="Project Links">Project Links</a>
-    </nav>
-    <img id="mouseFly" src="Images/fly.jpg" alt="mouseFly" width="50px">
-    <div class="right" style="height: 40em;">
+
+    <div id="navBar" class="navigation">
+      <div id="aboutLink"><a href="#About">About Me</a></div>
+      <div id="projLink"><a href="#Project">Project Links</a></div>
+      <div id="resLink"><a href="#Resume">Resume</a></div>
+      <div id="test"></div>
+    </div>
+
+    <div class="mainSection">
+      <div id="About"><header>Welcome</header></div>
       <img src="Images/aboutMain.jpg" alt="profilePic" width="30%">
-      <header>Welcome
-      </header>
+      
       <p>My name is Thomas Skowronski and I am a recent computer 
         information systems graduate looking to enter the field 
         of software engineering. Here you will find links to my
@@ -32,6 +34,16 @@
       <a href="https://www.github.com/ThomasSkowronski">GitHub</a>
       <p>for additional projects that I am working on.</p>
     </div>
+
+    <div class="mainSection">
+      <header id="Project">Project Links</header>
+    </div>
+
+    <div class="mainSection">
+      <header id="Resume">My Resume</header>
+    </div>
+
+    <footer id="foot">Contact Me</footer>
 
     <script src="index.js"></script>
   </body>

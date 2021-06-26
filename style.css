@@ -4,31 +4,23 @@
     --secondary:#718073;
     --accent:#b46422;
     --dark:#292823;
-    --light:#8f817b;
+    --light:#ece6e4;
     font-family: 'Open Sans', sans-serif;
-    font-size: 3vw;
-}
-
-body {
-    background-color:var(--primary);
-    padding: 5%;
+    font-size: 2vmax;
     color: var(--dark);
 }
 
-body, * {
-    border-radius: 10px;
-}
-
-div {
-    background-color:var(--secondary);
-    max-width: 95%;
-    margin: auto;
+/* main body divs */
+.mainSection {
+    margin-left: 8em;
+    margin-top: 5em;
+    height: 30em;
 }
 
 img {
     border-radius: 5px;
-    float: left;
-    margin: 1em;
+    float: right;
+    padding: 1em;
 }
 
 p {
@@ -40,34 +32,32 @@ header {
     font-size: 3em;
 }
 
-/*Nav bar and links*/
-nav {
-    background-color: var(--secondary);
-    width:fit-content;
-    margin: auto;
-    margin-bottom: 1%;
+a {
+    color: var(--dark);
 }
 
-nav, a {
+/*Nav bar and links*/
+.navigation {
+    position: fixed;
+    font-size: 1em;
+    width: 100%;
+    height: 50%;
+}
+
+.navigation div {
+    background-color: var(--light);
+    text-align: left;
+    margin-bottom: 1PX;
+    border-radius: 0.1em;
+    width: 7em;
+    transition: background-color 500ms;
+}
+
+.navigation div a {
     color:var(--dark);
-    text-align: center;
-    padding: 5px;
+    width: 20em:
 }
 
 button {
     background-color: dimgray;
-}
-
-/*class specific*/
-.left {
-    text-align: left;
-}
-
-.center {
-    text-align: center;
-}
-
-#mouseFly {
-    position: absolute;
-    margin: -25px;
 }
