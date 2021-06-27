@@ -9,7 +9,11 @@ const projLink = document.getElementById("projLink");
 const resumeHead  = document.getElementById("Resume");
 const resumeLink = document.getElementById("resLink");
 
-function navIntersect() {
+const body = document.body;
+
+var bgMoveFactor = 3.5;
+
+function updateView() {
   var navRect = navBar.getBoundingClientRect();
   var aboutRect = aboutHead.getBoundingClientRect();
   var projectRect = projectHead.getBoundingClientRect();
@@ -35,6 +39,10 @@ function navIntersect() {
     projLink.style.backgroundColor="var(--light)";
     resumeLink.style.backgroundColor="var(--secondary)";
   }
+
+  var yPos = scrollBottom/bgMoveFactor;
+  body.style.backgroundPositionY = yPos+"px";
+
 }
 
-var scrollInterval = setInterval(navIntersect, 100);
+var scrollInterval = setInterval(updateView, 10);

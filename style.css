@@ -6,14 +6,18 @@
     --dark:#292823;
     --light:#ece6e4;
     font-family: 'Open Sans', sans-serif;
-    font-size: 2vmax;
+    font-size: 2em;
     color: var(--dark);
 }
 
 /* main body divs */
-.mainSection {
+.mainContainer {
     margin-left: 8em;
-    margin-top: 5em;
+    background-color: rgba(216, 216, 216, 0.397);
+    border-radius: 20px;
+}
+
+.mainSection {
     height: 30em;
 }
 
@@ -37,17 +41,23 @@ a {
 }
 
 /*Nav bar and links*/
+#navBar {
+    height: 50%;
+    position: fixed;
+}
+
 .navigation {
+    background-color: var(--light);
     position: fixed;
     font-size: 1em;
-    width: 100%;
-    height: 50%;
+    width: fit-content;
+    margin-bottom: 4em;
 }
 
 .navigation div {
     background-color: var(--light);
     text-align: left;
-    margin-bottom: 1PX;
+    margin-bottom: 0.5em;
     border-radius: 0.1em;
     width: 7em;
     transition: background-color 500ms;
@@ -60,4 +70,10 @@ a {
 
 button {
     background-color: dimgray;
+}
+
+/*background*/
+
+body {
+    background-image: url(Images/BG.png);
 }
