@@ -11,7 +11,7 @@ const resumeLink = document.getElementById("resLink");
 
 const body = document.body;
 
-var bgMoveFactor = 3.5;
+var bgMoveFactor = 2.5;
 
 function updateView() {
   var navRect = navBar.getBoundingClientRect();
@@ -23,21 +23,21 @@ function updateView() {
   
   
   if (navRect.bottom > aboutRect.top) {
-    aboutLink.style.backgroundColor="var(--secondary)";
+    aboutLink.style.backgroundColor="var(--dark)";
     projLink.style.backgroundColor="var(--light)";
     resumeLink.style.backgroundColor="var(--light)";
   } 
 
   if (navRect.bottom > projectRect.top) {
     aboutLink.style.backgroundColor="var(--light)";
-    projLink.style.backgroundColor="var(--secondary)";
+    projLink.style.backgroundColor="var(--dark)";
     resumeLink.style.backgroundColor="var(--light)";
   }
 
   if (navRect.bottom > resumeRect.top || scrollBottom == $(document).height()) {
     aboutLink.style.backgroundColor="var(--light)";
     projLink.style.backgroundColor="var(--light)";
-    resumeLink.style.backgroundColor="var(--secondary)";
+    resumeLink.style.backgroundColor="var(--dark)";
   }
 
   var yPos = scrollBottom/bgMoveFactor;
