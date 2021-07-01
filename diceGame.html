@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="dice.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <title>Thomas Skowronski Dice Game</title>
+    </head>
+    <body>
+        <div class="container">
+            <h2>This is a simple dice game</h2>
+
+            <h3>To play: roll the dice and then decide if you would like to roll again. <br> 
+            If you get too many strikes across all of your rolls (equal to the number of dice) then your score is 0 and that round is over. <br>
+            Click 'bank points' in order to record your score and try again. <br>
+            This page was written using JQuery and Bootstrap.</h3>
+            <h6>
+                <a href="index.html" class="btn btn-default">Back to main site.</a>
+            </h6>
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <label for="numDice">Number of dice/strikes:</label>
+                        <select class="form-control" id="numDice">
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>   
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <button class='btn btn-default' id='reset'>Reset Game</button>
+                </div>
+                <div class="col-sm-2">
+                    <button class='btn btn-default' id='roll'>Roll Dice</button>
+                </div>
+                <div class="col-sm-2">
+                    <button class='btn btn-default' id='bank'>Bank Score</button>
+                </div>
+                <div class="col-sm-3">
+                    <h3 id="strikes"></h3>
+                </div>
+            </div>
+
+            <div class='row' id='game'>
+            </div>
+
+            <div class="row">
+                <h4 class="col-sm-5" style="text-align: right;">Current Score:</h4>
+                <h4 class="col-sm-7" id="score">0</h4>
+            </div>
+            <div class="row">
+                <h4 class="col-sm-5" style="text-align: right;">Failure Rate:</h4>
+                <h4 class="col-sm-7" id="failRate">0</h4>
+            </div>
+            <div class="row">
+                <h4 class="col-sm-5" style="text-align: right;">Average Score:</h4>
+                <h4 class="col-sm-7" id="avgScore">0</h4>
+            </div>
+            <div class="row">
+                <h4 class="col-sm-5" style="text-align: right;">Average Rolls:</h4>
+                <h4 class="col-sm-7" id="avgRoll">0</h4>
+            </div>
+
+            <div id="scoreHist" class="row">
+            </div>
+        </div>
+        <script src="dice.js"></script>
+    </body>
+</html>
+
