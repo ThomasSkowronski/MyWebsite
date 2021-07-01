@@ -16,6 +16,7 @@
   </head>
   <body>
 
+    <!--Set up the navigation side bar-->
     <div id="navBar">
       <div class="navigation">
         <div id="aboutLink"><a href="#About">About Me</a></div>
@@ -27,7 +28,8 @@
     <div class="mainContainer">
       <div id="About"><header>Welcome</header></div>
        
-        <div class="mainSection">
+      <!--Main about me section-->  
+      <div class="mainSection">
           <p><img src="Images/aboutMain.jpg" alt="profilePic" id="profile">My name is Thomas Skowronski and I am a recent computer 
             information systems graduate looking to enter the field 
             of software engineering. Here you will find links to my
@@ -38,16 +40,29 @@
           for additional projects that I am working on.</p>
         </div>
 
-      <div class="mainSection">
+        <!--Portfolio section-->
+        <div class="mainSection">
         <header id="Project">Project Links</header>
-        <p>This webpage was made using just HTML, CSS, JavaScript, and JQuery. <br>
-        The projects linked below make up my portfolio of other web pages. <br></p>
-        <h2 style="text-align: center;"><a href="diceGame.html">A Dice Game</a></h2>
+        <p>This webpage was made using just HTML, CSS, JavaScript, and JQuery. My <a href="https://www.github.com/ThomasSkowronski">GitHub</a>
+        contains projects such as an Android app and the projects linked below are some other things that I have created.</p>
+
+        <h3 style="text-align: center;">Dice Game</h3>
+
         <p>I made this dice game using Bootstrap and JQuery. It is a simple game where the player tries to get a higher score by rolling the dice. <br>
         If too many 1's are rolled then the round ends with a score of 0. <br>
-        I made this webpage to see how the game plays out over a number of turns with different amounts of dice and strikes in the game.</p>
+        I made this webpage to see how the game plays out over a number of turns with different amounts of dice and strikes in the game. <br>
+        <a class="button" href="diceGame.html">Dice Game</a></p>
+
+        <h3 style="text-align: center;">Weight Tracker Android App</h3>
+
+        <p>This Android app allows the user to set a goal for weight loss and track their progress over time. <br>
+          The app saves the data about the user with shared preferences and weight entries can be saved along with a picture in order to see progress. <br>
+          An SQLite database handles the entries and these can be viewed in chronological order and deleted as well. <br>
+          <a class="button" href="https://github.com/ThomasSkowronski/WeightTrackAssign">Weight Tracker App</a></p>
+
       </div>
 
+      <!--Resume section with the PDF viewer and download link-->
       <div class="mainSection">
         <header id="Resume">My Resume</header>
         <div class="center"><iframe src="Docs\ThomasResume.pdf" frameborder="0"></iframe></div>

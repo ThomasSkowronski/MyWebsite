@@ -54,6 +54,17 @@ iframe {
     margin: auto;
 }
 
+/*this class is for the links in the portfolio section*/
+.button {
+    color: black;
+    background-color: var(--dark);
+    border-radius: 0.2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin: auto;
+    display: inline;
+}
+
 /*Nav bar and links*/
 #navBar {
     height: 45%;
