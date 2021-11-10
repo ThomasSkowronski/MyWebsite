@@ -1,4 +1,4 @@
-//set up the buttons
+//set up the buttonss
 $(function(){
 
     $("#reset").click(function(){
@@ -56,7 +56,7 @@ function rollDice() {
         var result = Math.ceil(Math.random()*6);
 
         $("#"+id).text(result);
-        
+
         scoreTurn += result;
 
         if (result == 1) {
@@ -83,10 +83,10 @@ function saveScore(){
 
         var scoreTxt = "<h4 class='col-sm-4'>Score: "+scoreTurn+"</h4>";
         var rollsTxt = "<h4 class='col-sm-8'>Number of rolls: "+numRolls+"</h4>";
-    
+
         $("#scoreHist").append(scoreTxt+rollsTxt);
-        
-        
+
+
         totalScore += scoreTurn;
         totalRolls += numRolls;
         avgScore = Math.ceil(totalScore/success);
@@ -95,7 +95,7 @@ function saveScore(){
         $("#avgScore").text(avgScore);
         $("#avgRoll").text(avgRolls);
 
-        
+
     }
 
     updateView();
@@ -114,7 +114,7 @@ function loseCheck() {
 This is used when a new game is needed potentially with a different number of dice.*/
 function resetBoard () {
     $("#game *").remove()
-    addDice();    
+    addDice();
     $("#score").text(0);
     scoreTurn = 0;
     strike = 0;
